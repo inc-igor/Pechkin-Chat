@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Regular.ttf');
+}
+
+body {
+    width: 300px;
+    height: 400px;
+    background-color: #f3f3f3;
+    scroll-behavior: smooth;
+}
+
+textarea {
+    border-radius: 1px;
+    border-color: #909CDA;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    outline: none;
+    right: 0;
+    left: 0;
+    resize: none;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+    color: #495886;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.message {
+    background: #00abbb;
+    color: white;
+    border-radius: 4px;
+    padding: 7px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+    max-width: 60%;
+    overflow: hidden;
+    clear: left;
+    text-overflow: ellipsis;
+}
+
+.another {
+    background-color: #25B983;
+    margin-left: 45px;
+    margin-top: -40px;
+}
+
+.my{
+    background: #00abbb;
+    margin-left: 44px;
+}
+.time{
+    font-size: 10px;
+    color: #EDEDED;
+    margin-bottom: 5px;
+
+}
+
+#ext-message-container {
+    overflow-y: scroll;
+    max-height: 350px;
+    padding: 0.5rem;
+}
+
+#ascrail2000 div {
+    padding: 1px !important;
+    border-radius: 0 !important;
+    border-right: 1px solid transparent !important;
+    border-left: none !important;
+    border-top: none !important;
+    border-bottom: none !important;
+    margin: 1px 0 !important;
+    margin-right: -9px!important;
+    background-color: rgba(0, 0, 0, 0.298039)!important;
+}
+
+.avatar-icon{
+    width: 40px;
+    position: relative;
+}
+.avatar-icon img {
+    display: block;
+    width: 100%;
+    border-radius: 40px;
+}
+
+
+.user1.avatar-icon:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 37px;
+    width: 0;
+    height: 0;
+    border: 5px solid #25b983;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+}
+
+
+.user2.avatar-icon:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 37px;
+    width: 0;
+    height: 0;
+    border: 5px solid #00abbb;
+    border-right-color: transparent;
+    border-top-color: transparent;
+}
+
+.user2 {
+    float: right;
+    margin-top: -55px;
+    margin-right: 8px;
+}
