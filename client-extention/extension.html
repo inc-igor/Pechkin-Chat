@@ -1,10 +1,27 @@
 ﻿<link href="styles.css" rel="stylesheet"/>
 <script src="socket.io-1.4.5.js"></script>
-	
-<div id="ext-message-container"></div>
 
-<textarea placeholder="Сообщение"></textarea>
+<div id="loginArea">
+	<h2>Who are you?</h2>
+	<br/>
+    <p id="validation-error"></p>
+	<br/>
+	<form class="loginForm">
+		<input type="text" id="yourName" placeholder="Your nick name" /><br/>
+		<input type="email" id="yourEmail" placeholder="Your email address" /><br/>
+		<input type="password" id="yourPassword" placeholder="Your email password" /><br/>
+		<input type="submit" id="yourEnter" value="ENTER" />
+	</form>
+</div>
 
+
+<div id="chatArea" class="hide">	
+	<div id="messagesContainer"></div>
+	<div id="typingArea"></div>
+	<textarea placeholder="Сообщение"></textarea>
+</div>
+
+<input type="hidden" name="myName" id="myName" />
 <script src="settings.js"></script>
 <script src="jquery.js"></script>
 <script src="jquery.nicescroll.js"></script>

@@ -25,6 +25,20 @@ textarea {
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
+#typingArea {
+	position: fixed;
+    bottom: 39px;	
+	right: 0;
+    left: 5px;
+}
+
+.hide {
+	display: none;
+}
+
+#validation-error {
+	color: red;
+}
 .message {
     background: #00abbb;
     color: white;
@@ -40,14 +54,23 @@ textarea {
     text-overflow: ellipsis;
 }
 
-.another {
+.another{
     background-color: #25B983;
     margin-left: 45px;
-    margin-top: -40px;
 }
 
 .my{
     background: #00abbb;
+    margin-left: 44px;
+}
+
+.logon{
+    background: #FF7043;
+    margin-left: 44px;
+}
+
+.disconnect{
+    background: #BA68C8;
     margin-left: 44px;
 }
 .time{
@@ -57,7 +80,7 @@ textarea {
 
 }
 
-#ext-message-container {
+#messagesContainer {
     overflow-y: scroll;
     max-height: 350px;
     padding: 0.5rem;
@@ -75,7 +98,7 @@ textarea {
     background-color: rgba(0, 0, 0, 0.298039)!important;
 }
 
-.avatar-icon{
+.avatar-icon {
     width: 40px;
     position: relative;
 }
@@ -86,20 +109,13 @@ textarea {
 }
 
 
-.user1.avatar-icon:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 37px;
-    width: 0;
-    height: 0;
-    border: 5px solid #25b983;
-    border-left-color: transparent;
-    border-bottom-color: transparent;
+.myAva {
+    float: right;
+    margin-top: -55px;
+    margin-right: 2px;
 }
 
-
-.user2.avatar-icon:after {
+.myAva.avatar-icon:after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -111,8 +127,20 @@ textarea {
     border-top-color: transparent;
 }
 
-.user2 {
-    float: right;
-    margin-top: -55px;
-    margin-right: 8px;
+.anotherAva {
+    float: left;
+    margin-top: -61px;
+    margin-left: 0;
+}
+
+.anotherAva.avatar-icon:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 37px;
+    width: 0;
+    height: 0;
+    border: 5px solid #25b983;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
 }
