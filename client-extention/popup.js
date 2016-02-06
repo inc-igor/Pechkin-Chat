@@ -1,4 +1,4 @@
-var socket = io("https://nog-val-chat.herokuapp.com");
+var socket = io("http://pechkin-chat.herokuapp.com/");
 //var socket = io("http://localhost:3000/");
 
 var loginForm = $(".loginForm"),
