@@ -1,7 +1,29 @@
 ﻿<link href="styles.css" rel="stylesheet"/>
 <script src="socket.io-1.4.5.js"></script>
 
+<h3 class="header-action">Login</h3>
+</div>
 <div id="loginArea">
+<h2 class="header-text">Who are you?</h2>
+<br/>
+<p id="validation-error"></p>
+<br/>
+<form class="loginForm">
+<input type="email" id="yourEmail" placeholder="Your email address" /><br/>
+<input type="password" id="yourPassword" placeholder="Your password" /><br/>
+<button class="btn btn-change-green btn-action-enter icon-arrow-right" style="margin-left: 25px;margin-top: 15px;font-size: 16px;">Login</button>
+</form>
+</div>
+<div class="row">
+<div class="col-md-6 link" style="float:left; margin-left: 21%;">
+<a href="#">sign up</a>
+</div>
+<div class="col-md-6 link"style="float:right;margin-right: 21%;">
+<a href="#">forgot?</a>
+</div>
+</div>
+
+<div id="loginArea" style="display:none">
 	<h2>Who are you?</h2>
 	<br/>
     <p id="validation-error"></p>

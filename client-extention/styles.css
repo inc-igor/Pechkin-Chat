@@ -1,18 +1,25 @@
 @font-face {
     font-family: 'Roboto';
     src: url('Roboto-Regular.ttf');
+
 }
 
-body {
+html {
     width: 300px;
     height: 400px;
-    background-color: #f3f3f3;
+    /*/!*background-color: #EDEFF0;*!/for chat*/
+    background-color: #fff;
     scroll-behavior: smooth;
+    border-top: 40px solid #3ab54a;
 }
 
 textarea {
-    border-radius: 1px;
-    border-color: #909CDA;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    border-color: #D9D9D9;
+    font-family: inherit;
+    padding: 5px 7px 0px 5px;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -20,71 +27,81 @@ textarea {
     right: 0;
     left: 0;
     resize: none;
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
-    color: #495886;
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 #typingArea {
-	position: fixed;
-    bottom: 39px;	
-	right: 0;
+    position: fixed;
+    bottom: 39px;
+    right: 0;
     left: 5px;
 }
 
 .hide {
-	display: none;
+    display: none;
 }
 
 #validation-error {
-	color: red;
+    color: red;
+    margin-top: -7%;
+    margin-bottom: -10px;
+    text-align: center;
 }
+
 .message {
     background: #00abbb;
     color: white;
     border-radius: 4px;
-    padding: 7px;
-    padding-left: 10px;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
-    max-width: 60%;
+    padding: 5px 5px 5px 10px;
+    margin-bottom: 23px;
+    max-width: 50%;
     overflow: hidden;
-    clear: left;
+    /*clear: left;*/
     text-overflow: ellipsis;
 }
 
-.another{
-    background-color: #25B983;
-    margin-left: 45px;
+.text {
+    clear: both;
+    font-size: 14px;
+    float: left;
+    letter-spacing: 0.4px;
 }
 
-.my{
-    background: #00abbb;
-    margin-left: 44px;
+.another {
+    background-color: #fff;
+    box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.2);
+    margin-left: 23%;
+    color: rgb(114, 114, 114);
 }
 
-.logon{
+.my {
+    background: #3AB54A;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+    margin-left: 50px;
+}
+
+.logon {
     background: #FF7043;
     margin-left: 44px;
 }
 
-.disconnect{
+.disconnect {
     background: #BA68C8;
     margin-left: 44px;
 }
-.time{
-    font-size: 10px;
-    color: #EDEDED;
+
+.time {
+    font-size: 9px;
+    float: right;
+    font-weight: 200;
+    letter-spacing: 0.5px;
     margin-bottom: 5px;
-
 }
 
-#messagesContainer {
-    overflow-y: scroll;
-    max-height: 350px;
-    padding: 0.5rem;
-}
+/*#messagesContainer {*/
+/*overflow-y: scroll;*/
+/*max-height: 350px;*/
+/*padding: 0.5rem;*/
+/*}*/
 
 #ascrail2000 div {
     padding: 1px !important;
@@ -94,20 +111,20 @@ textarea {
     border-top: none !important;
     border-bottom: none !important;
     margin: 1px 0 !important;
-    margin-right: -9px!important;
-    background-color: rgba(0, 0, 0, 0.298039)!important;
+    margin-right: -9px !important;
+    background-color: rgba(0, 0, 0, 0.298039) !important;
 }
 
 .avatar-icon {
     width: 40px;
     position: relative;
 }
-.avatar-icon img {
-    display: block;
-    width: 100%;
-    border-radius: 40px;
-}
 
+/*.avatar-icon img {*/
+/*display: block;*/
+/*width: 100%;*/
+/*border-radius: 40px;*/
+/*}*/
 
 .myAva {
     float: right;
@@ -144,3 +161,418 @@ textarea {
     border-left-color: transparent;
     border-bottom-color: transparent;
 }
+
+.header {
+    text-align: center;
+}
+
+.header-action {
+    margin-top: -40px;
+    font-size: 18px;
+    color: white;
+}
+
+.hr {
+    border-left: 1px solid #D9D9D9;
+
+}
+
+.header-text {
+    text-align: center;
+    padding-top: 15px;
+    font-size: 28px;
+    font-weight: lighter;
+
+}
+
+.loginForm {
+    margin-top: 7px;
+    text-align: center;
+}
+
+#yourName, #yourEmail, #yourPassword {
+    padding: 0.5em 1.3em calc(0.3em + 2px);
+    border-radius: 4px;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+    margin-bottom: 12px;
+    font-size: 16px;
+    border-top: none;
+    border-left: none;
+}
+
+:-moz-placeholder {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+:-moz-placeholder {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+:-ms-input-placeholder {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+:focus::-webkit-input-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+:focus::-moz-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+:focus:-moz-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+:focus:-ms-input-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+}
+
+/*#yourEnter {*/
+/*border-radius: 4px;*/
+/*box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.5);*/
+/*margin-bottom: 12px;*/
+/*font-size: 16px;*/
+/*border-top: none;*/
+/*border-left: none;*/
+/*cursor: pointer;*/
+/*color: #FFF;*/
+/*padding: 0.7em 2em calc(0.5em + 2px);*/
+/*background: #3ab54a;*/
+/*margin-top: 12px;*/
+/*}*/
+/*#yourEnter:hover { background: #29a038; }*/
+/*#yourEnter:active {*/
+/*background: #29a038;*/
+/*box-shadow: 0 3px rgb(33,147,90) inset;*/
+/*}*/
+
+.default-avatar {
+    content: url('avatar.png');
+    width: 170px;
+    height: 170px;
+    margin: 0 auto;
+}
+
+/* button style */
+
+.btn {
+    border: none;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 25px 80px;
+    display: inline-block;
+    margin: 15px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+
+}
+
+.btn:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+/* Pseudo elements for icons */
+.btn:before, {
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* btn-change */
+.btn-change {
+    background: #fcad26;
+    color: #fff;
+}
+
+.btn-change:hover {
+    background: #f29e0d;
+}
+
+.btn-change:active {
+    background: #f58500;
+    top: 2px;
+}
+
+.btn-change:before {
+    position: absolute;
+    height: 70%;
+    left: 0;
+    top: 0;
+    line-height: 3;
+    font-size: 140%;
+    width: 60px;
+}
+
+/* Button btn-action */
+.btn-action {
+    padding: 5px 13px 5px 71px;
+    /*padding: 20px 18px 18px 72px;*/
+}
+
+.btn-action:before {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.icon-photo:before {
+    content: url('icon-photo.png');
+    padding-top: 15px;
+    text-align: center;
+}
+
+/* Button btn-action-enter */
+.btn-change-green {
+    background: #3ab54a;
+    color: #fff;
+}
+
+.btn-change-green:hover {
+    background: #29a038;
+}
+
+.btn-change-green:active {
+    background: #21935A;
+    top: 2px;
+}
+
+.btn-change-green:before {
+    position: absolute;
+    height: 70%;
+    left: 0;
+    top: 0;
+    line-height: 3;
+    font-size: 140%;
+    width: 60px;
+}
+
+.btn-action-enter {
+    padding: 14px 66px 14px 26px;
+    /*padding: 25px 120px 25px 60px;*/
+    overflow: hidden;
+}
+
+.btn-action-enter:before {
+    left: 65%;
+    z-index: 2;
+}
+
+.btn-action-enter:after {
+    width: 33%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 1;
+    right: 0;
+    top: 0;
+    margin: -5px 0 0 -5px;
+    -webkit-transform-origin: 0 0;
+    -webkit-transform: rotate(-20deg);
+    -moz-transform-origin: 0 0;
+    -moz-transform: rotate(-20deg);
+    -ms-transform-origin: 0 0;
+    -ms-transform: rotate(-20deg);
+    transform-origin: 0 0;
+    transform: rotate(-20deg);
+}
+
+.btn-action-enter:hover:after {
+    width: 40%;
+}
+
+.icon-arrow-right:before {
+    content: url('icon-arrow.png');
+    padding-top: 15px;
+    text-align: center;
+}
+
+a {
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+a:focus, a:hover {
+    text-decoration: underline;
+}
+
+/*Contacts*/
+.contact {
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px #aaa;
+    clear: both;
+    cursor: pointer;
+    float: left;
+    margin: 17% 3% 3% -2%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+hr {
+    border-top: 0px solid #D9D9D9;
+    box-sizing: content-box;
+    height: 0px;
+}
+
+.people-search {
+    border: none;
+    float: left;
+    width: 100%;
+}
+
+::-webkit-input-placeholder {
+    text-align: left;
+!important;
+}
+
+.icon-label {
+    float: left;
+    margin-top: -2px;
+}
+
+.people {
+    float: left;
+}
+
+.info-contacts {
+    float: left;
+    cursor: pointer;
+    margin-top: 11px;
+    margin-left: 7px;
+    width: 97%;
+}
+
+a {
+    font-size: 14px !important;
+    color: #727272;
+}
+
+a:focus, a:hover {
+    text-decoration: none !important;
+}
+
+time {
+    float: right;
+    margin-right: 5%;
+    font-size: 11px;
+}
+
+.mail {
+    color: rgb(114, 114, 114);
+    font-size: 13px;
+    margin-top: 3px;
+}
+
+/*Chat*/
+.body-action {
+    overflow-y: scroll;
+    max-height: 300px;
+}
+
+.icon-header {
+    transform: scale(-1, 1);
+    float: left;
+    vertical-align: middle;
+    margin-top: 3px;
+}
+
+.chat {
+    margin-top: 5%;
+}
+
+.photo-chat {
+    width: 40px !important;
+    height: 40px !important;
+    background-size: cover !important;
+    cursor: default;
+}
+
+.user1.avatar-icon:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 42px;
+    width: 0;
+    height: 0;
+    border: 5px solid #3AB54A;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+}
+
+.user2.avatar-icon:after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    right: 41px;
+    width: 0;
+    height: 0;
+    border: 5px solid #fff;
+    border-right-color: transparent;
+    border-top-color: transparent;
+}
+
+.user2 {
+    float: right;
+    margin-top: -11px;
+    margin-right: 9px;
+}
+
+.name-contact {
+    float: left;
+    font-size: 12px;
+    font-weight: 200;
+    color: #E9E9E9;;
+    margin-top: -2px;
+    margin-bottom: 5px;
+    letter-spacing: 0.3px;
+}
+
+#mine {
+    color: inherit;
+}
+
+::-webkit-scrollbar {
+    background: transparent;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: lightgrey;
+    border: 1px solid #c1c1c1;
+}
+
